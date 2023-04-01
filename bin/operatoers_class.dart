@@ -58,7 +58,7 @@ int z=11;
   print(z is! int);
 
 
-///Relational opetators
+///Relational operators
   // booliyan values aanu outpuy vara ice if there is any condion like ${ x>10} x 10
   // x 10 nekkal valluthanegil out put true output varum
   int E=50;
@@ -68,4 +68,57 @@ int z=11;
   print("E<=60 =${E <=60}");
   print("E==10 =${E==10}");
   print("E!=10 =${E !=10}");
+
+///Logical operators
+  // && , // ,!(And :- user name password both check cheyan ,
+  //              means 1 ll kuduthal condition check cheyan .
+  //              OR :-
+  //              NOT:- n
+
+///AND
+  String username="admin@gmail.com";
+  String password="admin";
+  int otp =9080;
+  print (username=="admin@gmail.com" && password=="admin" && otp==9080 );
+  //AND alla conditionsum true ayyirikyanum
+///OR
+  print (username=="admin@gmail.com" && password=="adm" || otp==90 );
+  print (username=="admin@gmail" && password=="adm" || otp==9080 );
+  //OR operational evidaythy athythy condion T ayyi then F ayyi then F ayyi
+  //        ie  T * F * F= F  if conditions like F * F * T= T akkum
+
+///NOT
+  print(!(username=="user@gmail.com"));
+  //nammmal condition seriyano ennoke check cheyan. if any fild there to fill
+  // avida emty avathy nokkan .
+
+///conditional operations :- condion statemen ? true statment : false statement;
+  int age= 18;
+  String result= (age >= 18) ?" eligible " :" not eligible";
+  print (result);
+
+int m=50;
+int n=12;
+// int O=18;
+String results= (m>n)? "m is grater":"n is grater" ;
+  print (results);
+
+
+
+  int k=50;
+  int l=12;
+  int O=18;
+  String res= (k>l)? (l>O)? "k is grater":"l is grater";
+  print (res);
+
+
+///conditional operations 2 expr1 ?? expr2
+  String? data;
+  var out =data?.length ?? "not a valid data";
+ print(out);
+
+  String? dat='hello';
+  var output =dat?.length ?? "not a valid data";
+  print(output);
+
 }
